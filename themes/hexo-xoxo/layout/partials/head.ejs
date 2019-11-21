@@ -33,7 +33,7 @@ if (is_home()) pageTitle+= config.subtitle;
   <% if (theme.stylesheets !== undefined && theme.stylesheets.length > 0) { %>
     <!-- stylesheets list from config.yml -->
     <% theme.stylesheets.forEach(function(url) { %>
-      <link rel="stylesheet" href="<%=url%>">
+      <link rel="stylesheet" href="<%=url_for(url)%>">
     <% }); %>
   <% } %>
 </head>
